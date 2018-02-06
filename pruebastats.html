@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<script src="js/jquery-1.8.2.min.js?ver=1.1"></script>
+<script type="text/javascript" src="js/dist/jquery.jqplot.min.js?ver=1.1"></script>
+<script type="text/javascript" src="js/dist/plugins/jqplot.pieRenderer.min.js?ver=1.1"></script>
+<script type="text/javascript" src="js/dist/plugins/jqplot.donutRenderer.min.js?ver=1.1"></script>
+<script type="text/javascript" src="js/dist/plugins/jqplot.barRenderer.min.js?ver=1.1"></script>
+<script type="text/javascript" src="js/dist/plugins/jqplot.categoryAxisRenderer.min.js?ver=1.1"></script>
+<script type="text/javascript" src="js/dist/plugins/jqplot.pointLabels.min.js?ver=1.1"></script>
+<script type="text/javascript" src="js/dist/plugins/jqplot.highlighter.min.js?ver=1.1"></script>
+<script type="text/javascript" src="js/dist/plugins/jqplot.cursor.min.js?ver=1.1"></script>
+<link rel="stylesheet" type="text/css" href="js/dist/jquery.jqplot.min.css" />
+
+
+<script>
+
+
+$(document).ready(function(){
+  var line1 = [45, 52, 66, 57, 89];
+  var ticks = ["1","2","3","4","5"];
+  var plot1 = $.jqplot('chart1', [line1], {
+      title:'Data Point Highlighting',
+      axes:{
+        xaxis:{
+			ticks: ticks,
+			renderer: $.jqplot.CategoryAxisRenderer,
+			labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+			tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+			tickOptions: {fontSize: '8pt'}
+        },
+      },
+      highlighter: {
+        show: true,
+        sizeAdjust: 7.5
+      },
+      cursor: {
+        show: false
+      }
+  });
+});
+</script>
+
+
+</head>
+
+
+
+<body>
+
+<div id="chart1"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿#AntColorPicker {
+    background-color:#000;
+    border:1px solid #000;
+    margin:-1px;
+    margin: 0px;
+    cursor:pointer;    
+}
+#AntColorPicker ul {   
+    margin-right:30px;
+}
+#AntColorPicker * {
+    margin:0; padding:0;
+}
+#AntColorPicker a {
+    cursor:pointer;
+    display:block;
+    width:10px; height:10px;
+    
+}
+#AntColorPicker li {
+    float:left;
+    list-style:none;
+}
+#AntColorPicker a.AntColorPickerClose {
+    background:transparent url('images/cross.png') center center;
+    position:absolute;
+    background-repeat:no-repeat;
+    text-indent:-5000px;
+    right:0px;
+    width:20px; height:20px;
+    cursor:pointer;
+}
+img.RaZAntColorPicker {
+    /*width:1.3em; height:1.3em;*/
+    cursor:pointer;
+    vertical-align:text-bottom;
+}
+
+.AntColorPicker-whiteFont { color: white;}
+
+input.AntColorPickerIconeInput {
+    background: url('images/palette.png') no-repeat right;
+}

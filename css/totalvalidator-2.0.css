@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* TOTAL VALIDATOR */
+.TV_campo_OK{ border:1px solid #00ff00!important}
+.TV_campo_KO{ border:1px solid #ff0000!important}
+.TV_campo_error{display:none; width:224px; padding:3px; color:#ff0000; background-color:#ffcccc; border:1px solid #ff0000; position:absolute; font-size:10px;}

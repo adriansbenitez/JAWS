@@ -1,0 +1,138 @@
+#mensajero{
+    width: 250px;
+    display: table;
+    border: 1px solid #000000;
+    background: #f0f0f0;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    position: absolute;
+    top: 310px;
+    left: 500px;
+    opacity: 0.0;
+    z-index: 1;
+}
+
+.listadmin li{
+    cursor: default;
+}
+
+.lista-cursos, .lista-temas{
+    cursor: pointer;
+}
+
+.botonEnviar, #buscaPreguntas{
+    background: #191003 !important;
+    color: #FBF8E9 !important;
+    border: 0 none;
+    float: right;
+    padding: 5px;
+    cursor: pointer;
+    list-style: none outside none;
+    margin: 0;
+    text-decoration: none;
+}
+
+#tapa{
+    transition: all 1s ease-out;
+    opacity: 0.0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background: #0f0f0f;
+    display: none;
+}
+
+
+#tapa2 {
+    transition: all 1s ease-out;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 21;
+    opacity: 0.0;
+    display: none;
+    cursor: wait;
+}
+
+#tapa2 #error{
+    color: #0f0f0f;
+    padding: 20px;
+    text-shadow: 1px 1px 0 #CCCCCC;
+    background: rgb(200, 200, 200);
+    border-color: #593912;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 30px 1px 1px;
+    box-shadow: 0 0 20px 0 #000000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 20% auto 0;
+    width: 400px;
+    text-align: center;
+}
+
+.listadmin li img{ height:16px;
+                   margin-left:10px;
+                   transition:all 0.3s;
+                   -moz-transition:all 0.3s;
+                   -ms-transition:all 0.3s;
+                   -o-transition:all 0.3s;
+                   -webkit-transition:all 0.3s;
+                   color: #FFFFFF;
+                   float: right;
+                   line-height: 20px;
+                   margin-left: 10px;
+                   text-shadow: none;
+                   cursor:pointer;}
+
+.listadmin li img:hover{transform:scale(1.5,1.5);
+                        -moz-transform:scale(1.5,1.5);
+                        -ms-transform:scale(1.5,1.5);
+                        -o-transform:scale(1.5,1.5);
+                        -webkit-transform:scale(1.5,1.5);}
+
+.preguntaAgregable{background: #000; color: #fff; text-shadow: none; margin: 5px; padding: 5px 20px; border-radius: 5px;
+    text-align: center; cursor: pointer;}
+.preguntaAgregable:hover{color: #000; background: #fff;}
+
+#alumnosElegidos .alumnoAgregado, #preguntasElegidas .preguntaAgregada{
+    border: 1px solid #666600;
+    color: #000000;
+    background: #fafafa;
+    display: table;
+    width: 100%;
+}
+
+#preguntasElegidas .preguntaAgregada .ubicaTema, #alumnosElegidos .alumnoAgregado .ubicaTema{
+    float: left;
+    margin: 10px;
+}
+
+#preguntasElegidas .preguntaAgregada .borraPregunta, #alumnosElegidos .alumnoAgregado .borraAlumno {
+    float: right;
+    margin: 20px;
+    cursor: pointer;
+    transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -ms-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+}
+
+#preguntasElegidas .preguntaAgregada .borraPregunta:hoover, #alumnosElegidos .alumnoAgregado .borraAlumno:hoover{
+    transform:scale(1.5,1.5);
+    -moz-transform:scale(1.5,1.5);
+    -ms-transform:scale(1.5,1.5);
+    -o-transform:scale(1.5,1.5);
+    -webkit-transform:scale(1.5,1.5);
+}
+
+#cuentaPreguntas{
+    border: 1px solid #fafafa;
+    background: #1f1f1f;
+    color: #fafafa;
+    padding: 4px 10px;
+    float: right;
+    font-family: Georgia,"Times New Roman",Times,serif;
+}
