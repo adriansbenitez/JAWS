@@ -63,6 +63,7 @@
                     <li><a class="transition03" href="listexamenes.php">EXÁMENES</a></li>
                     <li><a class="transition03" href="calendario_general.php">CALENDARIO</a></li>
                     <li><a class="transition03" href="grupos.php">GRUPOS</a></li>
+                    <li><a class="transition03" href="/oposicion/oposicion.php">LIBRO DE OPOSICION</a></li>
             <? break;
                 case "2": ?>
                     <li><a class="transition03" href="perfil.php">PERFIL</a></li>
